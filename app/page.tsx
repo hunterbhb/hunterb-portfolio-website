@@ -1,21 +1,81 @@
+import Image from "next/image";
+import Link from "next/link";
+import { FaPython } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { SiSolidity } from "react-icons/si";
+import { SiEthers } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { TbSql } from "react-icons/tb";
+import { SiMysql } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandCSharp } from "react-icons/tb";
+
 export default function Home() {
   return (
-    <div className="">
-      <nav>
-        <p>Hunter Bailey</p>
-        <p>About</p>
-        <p>Services</p>
-        <p>Projects</p>
-        {/* Pops up a modal for user to display contact info */}
-        <button>Contact</button>
-      </nav>
-      <main className="">
-        
-      </main>
-      <footer className="">
-       <p>Get In Touch</p>
-       <p>hunterbhb11@gmail.com</p>
-      </footer>
-    </div>
+    <main>
+      <section className="bg-cover bg-blend-multiply bg-gray-300 bg-[url('/hero.JPG')] hero flex flex-col justify-center gap-10 min-h-screen">
+        <h2 className="text-xl">Showcase of my projects</h2>
+        <Link className="btn btn-xl" href={"/projects"}>
+          Projects
+        </Link>
+      </section>
+      <section className="pt-2 2xl:grid">
+        <h3 className="text-2xl text-primary-content/80 font-bold p-2">
+          About me
+        </h3>
+        <p className="p-4">
+          I specialize in software engineering, with an emphasis on Web3
+          technologies. I've been programming since 2021 starting with an
+          interest in Web3 then using traditional tech stacks there after. I
+          love learning new things and software engineering is great for always
+          having something new to learn!
+        </p>
+        <div className="flex gap-2 flex-col">
+          <div className="p-1">
+            <h4 className="text-xl text-primary-content/80 font-semibold">
+              Languages
+            </h4>
+            <div className="p-1 flex gap-2">
+              <FaPython fontSize={24} />
+              <SiTypescript fontSize={24} />
+              <SiSolidity fontSize={24} />
+              <TbSql fontSize={24} />
+              <TbBrandCSharp fontSize={24} />
+            </div>
+          </div>
+          <div className="p-1">
+            <h4 className="text-xl text-primary-content/80 font-semibold">
+              Databases
+            </h4>
+            <div className="p-1 flex gap-2">
+              <BiLogoPostgresql fontSize={24} />
+              <SiMysql fontSize={24} />
+            </div>
+          </div>
+          <div className="p-1">
+            <h4 className="text-xl text-primary-content/80 font-semibold">
+              Frameworks and Libraries
+            </h4>
+            <div className="p-1 flex gap-2">
+              <RiNextjsFill fontSize={24} />
+              <SiEthers fontSize={24} />
+              <SiReact fontSize={24} />
+              <RiTailwindCssFill fontSize={24} />
+            </div>
+          </div>
+          <div className="p-1">
+            <h4 className="text-xl text-primary-content/80 font-semibold">
+              Certifications
+            </h4>
+            <div className="p-2">
+              <p>Linux Foundations Essentials</p>
+              <p>ITIL V4</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
