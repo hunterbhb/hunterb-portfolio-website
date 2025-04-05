@@ -15,16 +15,25 @@ import { TbBrandCSharp } from "react-icons/tb";
 export default function Home() {
   return (
     <main>
-      <section className="bg-cover bg-blend-multiply bg-gray-300 bg-[url('/hero.JPG')] hero flex flex-col justify-center gap-10 min-h-screen">
-        <h2 className="text-xl">Showcase of my projects</h2>
+      <section className="bg-cover bg-blend-multiply bg-gray-300 bg-[url('/hero.png')] hero flex flex-col justify-center gap-10 min-h-screen">
+        <h2 className="text-xl text-orange-50">Showcase of my projects</h2>
         <Link className="btn btn-xl" href={"/projects"}>
           Projects
         </Link>
       </section>
       <section className="pt-2 2xl:grid">
-        <h3 className="text-2xl text-primary-content/80 font-bold p-2">
-          About me
-        </h3>
+        <div className="flex gap-2">
+          <h3 className="text-2xl text-primary-content/80 font-bold p-2">
+            ABOUT ME
+          </h3>
+          <Image
+            className="rounded-xs"
+            src={"/bailey_card.PNG"}
+            width={150}
+            height={50}
+            alt="card for Bailey with 'swe' occupation"
+          />
+        </div>
         <p className="p-4">
           I specialize in software engineering, with an emphasis on Web3
           technologies. I've been programming since 2021 starting with an
@@ -35,7 +44,7 @@ export default function Home() {
         <div className="flex gap-2 flex-col">
           <div className="p-1">
             <h4 className="text-xl text-primary-content/80 font-semibold">
-              Languages
+              LANGUAGES
             </h4>
             <div className="p-1 flex gap-2">
               <FaPython fontSize={24} />
@@ -47,7 +56,7 @@ export default function Home() {
           </div>
           <div className="p-1">
             <h4 className="text-xl text-primary-content/80 font-semibold">
-              Databases
+              DATABASES
             </h4>
             <div className="p-1 flex gap-2">
               <BiLogoPostgresql fontSize={24} />
@@ -56,7 +65,7 @@ export default function Home() {
           </div>
           <div className="p-1">
             <h4 className="text-xl text-primary-content/80 font-semibold">
-              Frameworks and Libraries
+              FRAMEWORKS AND LIBRARIES
             </h4>
             <div className="p-1 flex gap-2">
               <RiNextjsFill fontSize={24} />
@@ -67,7 +76,7 @@ export default function Home() {
           </div>
           <div className="p-1">
             <h4 className="text-xl text-primary-content/80 font-semibold">
-              Certifications
+              CERTIFICATIONS
             </h4>
             <div className="p-2">
               <p>Linux Foundations Essentials</p>
