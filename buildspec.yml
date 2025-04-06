@@ -1,0 +1,24 @@
+# buildspec.yml
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - echo Installing dependencies...
+      - npm install
+
+  build:
+    commands:
+      - echo Building site...
+      - npm run build
+
+  post_build:
+    commands:
+      - echo Deploying to S3...
+      - aws s3 sync ./next s3://hunterbhb.dev-ohio --delete
+
+artifacts:
+  files:
+    - "**/*"
