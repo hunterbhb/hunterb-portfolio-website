@@ -1,6 +1,27 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "portfolio";
+  default: true;
 
-
-@plugin "daisyui" {
-    themes: cyberpunk --default;
-  }
+  --color-base-100: #042e49;
+  --color-base-200: #014a70;
+  --color-base-300: 005889;
+  --color-base-content: #dff2fe;
+  --color-primary: #fbc700;
+  --color-primary-content: #411e3;
+  --color-secondary: #4ea0ff;
+  --color-secondary-content: #162455;
+  --color-accent: #000000;
+  --color-accent-content: #ffffff;
+  --color-neutral: #042e49;
+  --color-neutral-content: #edf7fd;
+  --color-info: #4ea0ff;
+  --color-info-content: #162455;
+  --color-success: #99e600;
+  --color-success-content: #182d02;
+  --color-warning: #fcb700;
+  --color-warning-content: #431700;
+  --color-error: #ff6266;
+  --color-error-content: #440607;
+}

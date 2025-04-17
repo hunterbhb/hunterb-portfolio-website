@@ -20,18 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased max-w-5xl flex flex-col min-h-screen mx-auto">
+      <body className="antialiased bg-base-100 max-w-5xl flex flex-col min-h-screen mx-auto">
         <nav className="navbar">
           <div className="navbar-start">
-            <Link
-              href={"/"}
-              className="bg-base-content flex gap-1 items-center max-w-max p-1 rounded-sm"
-            >
-              <Image width={50} height={50} src="/logo.png" alt="HB logo" />
-            </Link>
+            <Image width={128} height={128} src="/logo.png" alt="HB logo" />
           </div>
-          <div className="navbar-end gap-2">
-            <Link className="link text-accent" href={"/projects"}>
+          <div className="navbar-end pb-5 border-b-2 border-b-secondary gap-4">
+            <Link
+              className="link text-2xl text-base-content"
+              href={"/projects"}
+            >
               Projects
             </Link>
             <LanguageSwitcher />
@@ -46,16 +44,16 @@ export default function RootLayout({
               <p className="text-xl">hunterbhb11@gmail.com</p>
             </div>
           </div>
-          <div className="text-base-300 flex pt-2 md:self-end gap-6 justify-self-end">
+          <div className="flex p-1 md:self-end gap-6 justify-self-end">
             <a
-              className="p-2 bg-primary rounded"
+              className="bg-secondary p-1 text-white rounded-xs"
               target="_blank"
               href="https://github.com/hunterbhb"
             >
               <BsGithub size={24} />
             </a>
             <a
-              className="p-2 bg-primary rounded"
+              className="bg-secondary p-1 text-white rounded-xs"
               target="_blank"
               href="https://www.linkedin.com/in/hunter-bailey-ba0889295"
             >

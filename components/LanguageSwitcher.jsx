@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 import { TbLanguageHiragana } from "react-icons/tb";
 
 const LanguageSwitcher = () => {
   return (
-    <div className='p-4 bg-base-200 rounded'>
-        <TbLanguageHiragana size={24} />
+    <div className="bg-primary p-1 bg-base-200 rounded-lg">
+      <TbLanguageHiragana className="text-accent" size={24} />
     </div>
-  )
-}
+  );
+};
 
-export default LanguageSwitcher
+export default LanguageSwitcher;

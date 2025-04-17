@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
   trailingSlash: true, //Helps with S3 routing
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
