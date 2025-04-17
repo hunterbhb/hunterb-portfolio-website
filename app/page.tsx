@@ -28,7 +28,7 @@ export default function Home() {
           </h3>
           <Image
             className="rounded-xs"
-            src={"/bailey_card.PNG"}
+            src={"/bailey_card.png"}
             width={150}
             height={50}
             alt="card for Bailey with 'swe' occupation"
