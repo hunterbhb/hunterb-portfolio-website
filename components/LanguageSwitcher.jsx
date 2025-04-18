@@ -5,7 +5,7 @@ import { TbLanguageHiragana } from "react-icons/tb";
 
 const LanguageSwitcher = () => {
   return (
-    <div className="bg-primary p-1 bg-base-200 rounded-lg">
+    <div className="bg-primary p-1 rounded-lg">
       <TbLanguageHiragana className="text-accent" size={24} />
     </div>
   );

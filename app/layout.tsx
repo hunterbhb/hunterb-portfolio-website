@@ -3,6 +3,7 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import LanguageSwitcher from "../components/LanguageSwitcher";
+import CopyEmailButton from "../components/CopyEmailButton";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsEnvelopeAt } from "react-icons/bs";
@@ -36,12 +37,13 @@ export default function RootLayout({
           </div>
         </nav>
         <main className="flex-grow">{children}</main>
-        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-2">
+        <footer className="mt-8 footer sm:footer-horizontal bg-base-300 text-neutral-content items-center p-2">
           <div>
-            <h3 className="text-base-300 p-2">Contact Info</h3>
+            <h3 className="font-light text-xs p-2">Contact Info</h3>
             <div className="gap-1 pt-2 flex">
-              <BsEnvelopeAt className="text-base-300" size={24} />
-              <p className="text-xl">hunterbhb11@gmail.com</p>
+              <BsEnvelopeAt className="text-white" size={24} />
+              <p className="text-xl text-primary">hunterbhb11@gmail.com</p>
+              <CopyEmailButton />
             </div>
           </div>
           <div className="flex p-1 md:self-end gap-6 justify-self-end">
