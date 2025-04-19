@@ -16,17 +16,17 @@ export default function Home() {
   return (
     <main>
       <section className="bg-cover bg-blend-multiply bg-gray-300 bg-[url('/hero.png')] hero flex flex-col justify-center min-h-186">
-        <h2 className="absolute shadow mt-4 font-bold text-3xl rotate-315 text-primary">
+        <h2 className="absolute shadow mt-4 md:mt-0 font-bold text-3xl md:text-5xl rotate-315 text-primary">
           HELLO!
         </h2>
         <Link
-          className="mt-auto mb-4 font-bold justify-self-end shadow text-5xl"
+          className="mt-auto mb-6 font-bold justify-self-end md:self-end md:mr-8 shadow text-5xl"
           href={"/projects"}
         >
           See Projects
         </Link>
       </section>
-      <section className="pt-12 2xl:grid">
+      <section className="pt-12 md:grid md:grid-cols-2">
         <div className="flex gap-4">
           <h3
             style={{
@@ -38,23 +38,25 @@ export default function Home() {
             ABOUTME
           </h3>
           <Image
-            className="rounded-xs"
+            className="rounded-xs w-52 h-52 md:w-64 md:h-64"
             src={"/bailey_card.png"}
-            width={200}
-            height={160}
+            width={0}
+            height={0}
             alt="card for Bailey with 'swe' occupation"
           />
         </div>
-        <p className="p-4 text-xl">
-          I specialize in software engineering, with an emphasis on Web3
-          technologies. I've been programming since 2021 starting with an
-          interest in Web3 then using traditional tech stacks there after.
-        </p>
-        <p className="p-4 text-xl">
-          I love learning new things and software engineering is great for
-          always having something new to learn!
-        </p>
-        <div className="mt-8 rounded mx-3 bg-base-300 flex gap-2 flex-col pl-2">
+        <div>
+          <p className="p-4 text-xl">
+            I specialize in software engineering, with an emphasis on Web3
+            technologies. I've been programming since 2021 starting with an
+            interest in Web3 then using traditional tech stacks there after.
+          </p>
+          <p className="p-4 text-xl">
+            I love learning new things and software engineering is great for
+            always having something new to learn!
+          </p>
+        </div>
+        <div className="mt-8 rounded mx-3 md:mx-16 bg-base-300 max-w-md flex gap-2 flex-col pl-2 md:col-span-2">
           <div className="p-1">
             <h4 className="text-xs text-primary-content/80 font-light">
               LANGUAGES

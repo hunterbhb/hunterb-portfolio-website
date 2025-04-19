@@ -37,7 +37,7 @@ export default function RootLayout({
           </div>
         </nav>
         <main className="flex-grow">{children}</main>
-        <footer className="mt-8 footer sm:footer-horizontal bg-base-300 text-neutral-content items-center p-2">
+        <footer className="max-w-3xl mt-8 footer sm:footer-horizontal bg-base-300 text-neutral-content items-center p-2">
           <div>
             <h3 className="font-light text-xs p-2">Contact Info</h3>
             <div className="gap-1 pt-2 flex">
