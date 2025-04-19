@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-base-100 max-w-5xl flex flex-col min-h-screen mx-auto">
+      <body className="antialiased bg-base-100 max-w-7xl flex flex-col min-h-screen mx-auto">
         <nav className="navbar">
           <div className="navbar-start">
             <Image width={128} height={128} src="/logo.png" alt="HB logo" />
@@ -37,7 +37,7 @@ export default function RootLayout({
           </div>
         </nav>
         <main className="flex-grow">{children}</main>
-        <footer className="max-w-3xl mt-8 footer sm:footer-horizontal bg-base-300 text-neutral-content items-center p-2">
+        <footer className="max-w-3xl mt-8 footer sm:footer-horizontal md:mx-auto bg-base-300 text-neutral-content items-center p-2">
           <div>
             <h3 className="font-light text-xs p-2">Contact Info</h3>
             <div className="gap-1 pt-2 flex">

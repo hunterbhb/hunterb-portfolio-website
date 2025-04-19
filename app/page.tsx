@@ -26,7 +26,7 @@ export default function Home() {
           See Projects
         </Link>
       </section>
-      <section className="pt-12 md:grid md:grid-cols-2">
+      <section className="pt-12 md:grid md:grid-cols-2 lg:grid-cols-3">
         <div className="flex gap-4">
           <h3
             style={{
@@ -38,7 +38,7 @@ export default function Home() {
             ABOUTME
           </h3>
           <Image
-            className="rounded-xs w-52 h-52 md:w-64 md:h-64"
+            className="rounded-xs w-52 h-52 md:w-64 md:h-64 lg:w-80 lg:h-80"
             src={"/bailey_card.png"}
             width={0}
             height={0}
@@ -46,17 +46,17 @@ export default function Home() {
           />
         </div>
         <div>
-          <p className="p-4 text-xl">
+          <p className="p-4 lg:p-2 text-xl">
             I specialize in software engineering, with an emphasis on Web3
             technologies. I've been programming since 2021 starting with an
             interest in Web3 then using traditional tech stacks there after.
           </p>
-          <p className="p-4 text-xl">
+          <p className="p-4 lg:p-2 text-xl">
             I love learning new things and software engineering is great for
             always having something new to learn!
           </p>
         </div>
-        <div className="mt-8 rounded mx-3 md:mx-16 bg-base-300 max-w-md flex gap-2 flex-col pl-2 md:col-span-2">
+        <div className="mt-8 rounded mx-3 md:mx-16 lg:mx-0 bg-base-300 max-w-md flex gap-2 flex-col pl-2 md:col-span-2 lg:col-span-1">
           <div className="p-1">
             <h4 className="text-xs text-primary-content/80 font-light">
               LANGUAGES

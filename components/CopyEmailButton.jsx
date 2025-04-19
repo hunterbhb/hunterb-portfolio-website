@@ -14,7 +14,7 @@ const CopyEmailButton = () => {
   return (
     <button
       onClick={handleCopyEmail}
-      className={`shadow bg-neutral-content p-1 rounded-lg transition-all ${
+      className={`hover:cursor-pointer shadow bg-neutral-content p-1 rounded-lg transition-all ${
         copied ? "animate-glow" : ""
       }`}
     >
