@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main>
       <section className="bg-cover bg-blend-multiply bg-gray-300 bg-[url('/hero.png')] hero flex flex-col justify-center min-h-186">
-        <h2 className="absolute shadow mt-4 md:mt-0 font-bold text-3xl md:text-5xl rotate-315 text-primary">
+        <h2 className="absolute shadow mt-4 md:mt-0 lg:mb-5 font-bold text-3xl md:text-5xl lg:text-6xl rotate-315 text-primary">
           HELLO!
         </h2>
         <Link
