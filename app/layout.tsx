@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
-import Link from "next/link";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import CopyEmailButton from "../components/CopyEmailButton";
+import Links from "../components/Links";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsEnvelopeAt } from "react-icons/bs";
@@ -27,12 +27,7 @@ export default function RootLayout({
             <Image width={128} height={128} src="/logo.png" alt="HB logo" />
           </div>
           <div className="navbar-end pb-5 border-b-2 border-b-secondary gap-4">
-            <Link
-              className="link text-2xl text-base-content"
-              href={"/projects"}
-            >
-              Projects
-            </Link>
+            <Links />
             <LanguageSwitcher />
           </div>
         </nav>
